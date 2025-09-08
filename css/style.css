@@ -71,14 +71,17 @@ nav li {
     align-items: center;
 }
 nav a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
+  vertical-align: middle;
   height: 2.5rem;
   line-height: 1;
   padding: 0 0.9em;
   border-radius: 999em;
   font-weight: 600;
+}
+nav a[aria-current="page"] {
+  background: var(--line);
+  color: var(--text);
 }
 
 /* Footer */
