@@ -48,7 +48,7 @@ hr {
 nav {
   position: sticky;
   top: 0;
-  background: #fff;
+  background: var(--bg);
   border-bottom: 1px solid var(--line);
 }
 nav .inner {
@@ -72,8 +72,6 @@ nav a {
   padding: 0.5em 0.9em;
   border-radius: 999em;
   font-weight: 600;
-}
-nav a[aria-current="page"] {
   outline: 2px solid var(--accent);
 }
 
@@ -115,7 +113,7 @@ article + article { margin-top: var(--space-3); }
   background: #fafafa;
 }
 .portfolio h2 { color: var(--text); }
-.portfolio a[href^="http"]::after { content: " â†—"; }
+.portfolio a[href^="http"]::after { content: " \2197"; }
 
 /* About */
 .about .page { width: min(92vw, 60rem); }
