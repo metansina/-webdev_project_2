@@ -114,6 +114,7 @@ article { margin-top: var(--space-3); }
   width: 100%;
   max-width: 960px;
 }
+.portfolio header h1 { text-align: center; }
 .portfolio section article {
   border: 1px solid var(--line);
   border-radius: var(--space-1);
