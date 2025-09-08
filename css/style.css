@@ -85,8 +85,8 @@ footer {
 
 /* Lists & article */
 ul, ol { padding-inline-start: 1.2em; }
-li + li { margin-top: 0.35em; }
-article + article { margin-top: var(--space-3); }
+li { margin-top: 0.35em; }
+article { margin-top: var(--space-3); }
 
 /* Page-specific differences */
 
