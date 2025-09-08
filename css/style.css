@@ -63,16 +63,20 @@ nav ul {
   display: flex;
   gap: 1rem;
   justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
+  flex-wrap: wrap;
+}
+nav li {
+    display: flex;
+    align-items: center;
 }
 nav a {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  line-height: 1;
   padding: 0.5em 0.9em;
   border-radius: 999em;
   font-weight: 600;
-  outline: 2px solid var(--accent);
 }
 
 /* Footer */
@@ -113,7 +117,10 @@ article + article { margin-top: var(--space-3); }
   background: #fafafa;
 }
 .portfolio h2 { color: var(--text); }
-.portfolio a[href^="http"]::after { content: " \2197"; }
+.portfolio a[href^="http"]::after { 
+    content: "\2197"; 
+    margin-left: 0.25em;
+}
 
 /* About */
 .about .page { width: min(92vw, 60rem); }
