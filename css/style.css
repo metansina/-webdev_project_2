@@ -61,9 +61,9 @@ nav ul {
   padding: 0;
   list-style: none;
   display: flex;
-  gap: 1rem;
   justify-content: center;
   align-items: center;
+  gap: var(--space-2);
   flex-wrap: wrap;
 }
 nav li {
@@ -73,8 +73,10 @@ nav li {
 nav a {
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 2.5rem;
   line-height: 1;
-  padding: 0.5em 0.9em;
+  padding: 0 0.9em;
   border-radius: 999em;
   font-weight: 600;
 }
@@ -102,8 +104,8 @@ article + article { margin-top: var(--space-3); }
 }
 .cv header { text-align: center; }
 .cv header p { color: var(--muted); margin: 0.25em 0; }
-.cv section { padding: var(--space-2); border: 1px solid var(--line); border-radius: 0.5rem; }
-.cv article { padding: var(--space-2); border-radius: 0.5rem; background: #f9fafb; }
+.cv section { padding: var(--space-2); border: 1px solid var(--line); border-radius: var(--space-1); }
+.cv article { padding: var(--space-2); border-radius: var(--space-1); background: #f9fafb; }
 
 /* Portfolio fixed-width layout */
 .portfolio .page {
@@ -112,13 +114,14 @@ article + article { margin-top: var(--space-3); }
 }
 .portfolio section article {
   border: 1px solid var(--line);
-  border-radius: 0.5rem;
-  padding: clamp(1rem, 2vw, 1.5rem);
+  border-radius: var(--space-1);
+  padding: clamp(var(--space-2), 2vw, varvar(--space-3);
   background: #fafafa;
 }
 .portfolio h2 { color: var(--text); }
 .portfolio a[href^="http"]::after { 
-    content: "\2197"; 
+    content: "\2197";
+    font-size: 0.85em; 
     margin-left: 0.25em;
 }
 
@@ -143,7 +146,7 @@ article + article { margin-top: var(--space-3); }
 @media (max-width: 48rem) {
     nav .inner { width: 96vw; }
     .grid.two { grid-template-columns: 1fr; }
-    h1 { font-size: clamp(1.6rem, 8vw, 2rem); }
+    h1 { font-size: clamp(var(--space-3), 8vw, var(--space-4)); }
 }
 
 @media (min-width: 64rem) {
