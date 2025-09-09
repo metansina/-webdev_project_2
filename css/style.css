@@ -47,13 +47,6 @@ hr {
   margin: var(--space-3) 0;
 }
 
-/* Cards */
-.card {
-  border: 1px solid var(--line);
-  border-radius: 0.75rem;
-  padding: var(--space-2);
-}
-
 /* Centered top navigation */
 nav {
   position: sticky;
@@ -137,22 +130,4 @@ article { margin-top: var(--space-3); }
   max-width: 100%;
   margin: 0 auto var(--space-3) auto;
   border: 2px solid var(--line);
-}
-.about .lead { font-size: 1.05rem; color: var(--muted); }
-
-/* Simple grids (shared) */
-.grid { display: grid; gap: var(--space-2); }
-.grid.two { grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
-.grid.three { grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); }
-
-/* Media queries */
-@media (max-width: 48rem) {
-    nav .inner { width: 96vw; }
-    .grid.two { grid-template-columns: 1fr; }
-    h1 { font-size: clamp(var(--space-3), 8vw, var(--space-4)); }
-}
-
-@media (min-width: 64rem) {
-    .cv .page { width: min(94vw, 72rem); }
-    .portfolio .page { max-width: 1040px; }
 }
