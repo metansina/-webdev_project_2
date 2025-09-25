@@ -12,7 +12,7 @@
   --space-3: 1.5rem;
   --space-4: 2rem;
 
-  --font-system: system-ui, sans-serif;
+  --font-system: system-ui, arial;
   --font-import: "Inter", var(--font-system);
 }
 
@@ -40,11 +40,9 @@ a { color: var(--accent); text-decoration: none; }
 a:hover, a:focus-visible { text-decoration: underline; }
 
 /* Horisontal line */
-hr {
-  border: 0;
-  height: 1px;
-  background: var(--line);
-  margin: var(--space-3) 0;
+.hline {
+  border-top: 1px solid var(--line);
+  margin: 20px 0;
 }
 
 /* Centered top navigation */
@@ -99,7 +97,7 @@ article { margin-top: var(--space-3); }
 }
 .cv header { text-align: center; }
 .cv header p { color: var(--muted); margin: 0.25em 0; }
-.cv section { padding: var(--space-2); border: 1px solid var(--line); border-radius: var(--space-1); }
+.cv section { padding: var(--space-2); margin: var(--space-2); border: 1px solid var(--line); border-radius: var(--space-1); }
 .cv article { padding: var(--space-2); border-radius: var(--space-1); background: #f9fafb; }
 
 /* Portfolio fixed-width layout */
